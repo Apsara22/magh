@@ -1,0 +1,45 @@
+JAVASCRIPT
+js is case sensitive.
+console.log("hello"); is function
+variable is reuseable.
+isVerified =true//camelCase OR is_verified =true//snakeCase is used
+
+let vs var vs const
+var behaviour is known as hoisting, where the variable declaration is moved to the top of the function.
+let has block scope, which means it is only accessible within the block it's declared in (inside the if block).
+const is difference is that const variables cannot be reassigned once they are assigned a value. 
+js reinstalize
+const is usually written in capital is used function
+let minimize the duplicate.
+
+****login duplicate figma
+
+//function
+is a sepration of logic.
+//return in function 
+console is build object
+inside console value is call parameter.
+
+//if else 
+//nested if else
+
+opertarors
+assiment operator
+
+arthematic operator
++
+-
+*
+/
+%-modules---return reminder
+-comprasion 
+-logical operators
+   AND //each and every condition can be true
+   OR// one condition should be true oR can get first prority
+   NOT
+
+   LooP
+     -for
+     -while 
+     - do while
+
