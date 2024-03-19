@@ -29,12 +29,51 @@ let todos = [
       status: false,
     },
   ];
-// console.log(todos[1].title)
-for(i=0; i<todos.length; i++){
-if(todos[i].status==true){
-    console.log(todos[i].title)
-}
-else{
-    console.log("false")
-}
-}
+
+//   let completedTodo = []
+// // console.log(todos[1].title)
+// for(i=0; i<todos.length; i++){
+// if(todos[i].status==true){
+//      console.log(todos[i].title)
+//     completedTodo.push(todos[i])
+// }
+
+// }
+
+//function
+//return function
+//arrow function
+  function printStatus(index){
+    console.log(`${todos[index].title} is ${todos[index].status}`);
+  }
+  printStatus(0)
+  printStatus(1)
+  printStatus(2)
+  printStatus(3)
+//let list = [1,2,3,4,5];
+
+ function dNum(index){
+return index*2;
+ }
+ console.log("the number is", dNum(2));
+ console.log("the number is", dNum(3));
+ console.log("the number is", dNum(4));
+
+
+
+ /*function, call back
+    asynchronous 
+    a function pass as a parameter to another functionhing 
+
+ */
+
+ const dosomething = () =>{
+  console.log("do domething");
+  return undefined;
+ };
+
+ setTimeout(dosomething(),2000);
+ console.log("after set timeout");
+
+
+ 
