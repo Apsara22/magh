@@ -46,3 +46,8 @@ arthematic operator
 
 function, call back
     asynchronous
+
+    array function 
+      -push
+      -foreach
+    vs arrow function
