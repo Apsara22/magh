@@ -51,3 +51,7 @@ function, call back
       -push
       -foreach
     vs arrow function
+
+    teneryoperation which help short for if/else
+    filter
+    map

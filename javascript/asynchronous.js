@@ -164,11 +164,87 @@ let users = [
  {
   let total=0;
    user.cartItems.forEach((item) =>{
-  if(item.quantity>=0){
-    total = total + item.rate * item.quantity
-   }})
+  //if(item.quantity>=0){
+    total = total +(item.quantity > 0 ? item.quantity *item.rate :0 ) 
+   })
    console.log(`${user.name} has ordered rs: ${total}`);
  })
+
+//  let todoes = [
+//   {title: "html", status: true},
+//   {title: "css", status: true},
+//   {title: "js", status: false},
+//  ]
+//  todoes.forEach((todo) =>{
+//   console.log(`${todo.title} is ${todo.status ? "completed" : "pending"}`);
+//  })
+
+
+//  filter method
+ let complete =[
+  {title: "html", status: true},
+  {title: "css", status: true},
+  {title: "js", status: false},
+  {title:"react", status: false}
+ ]
+
+// let completedto =[];
+// complete.forEach((element) =>{
+//   if(element.status){
+//     completed.push(element)
+//   }
+// })
+
+
+completedto = todos.filter((element) =>{
+  if(element.status){
+    return true;
+  }
+})
+console.log(completedto);
+
+
+let numbers1 = [1,2,3,4];
+let evenNum = numbers1.filter((element) =>{
+  if(element % 2 == 0)
+  return true;
+})
+console.log(evenNum);
+
+//  //map 
+let doubleNumber = numbers1.map((element) =>{
+  return element*2;
+});
+console.log(doubleNumber);
+
+ const double =(input) => input * 2;
+ console.log(double(100));
+
+
+
+
+ let todoes =[
+  {title: "html", status: true},
+  {title: "css", status: true},
+  {title: "js", status: false},
+  {title:"react", status: false}
+ ]
+
+ let modifiedTools = todoes.map((element) =>{
+  if(element.status){
+    return{
+      title : element.title,
+      status : "completed"
+    }
+  }
+  else{
+    return{
+      title : element.title,
+      status : "pending"
+    }
+  }
+ })
+ console.log(modifiedTools);
 
 
 
