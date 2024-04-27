@@ -54,4 +54,6 @@ function, call back
 
     teneryoperation which help short for if/else
     filter
+      
     map
+       it helps to convert array

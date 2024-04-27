@@ -1,0 +1,24 @@
+.heading{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+.product{
+    list-style: none;
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 30%;
+    border: solid #333 1px;
+    border-spacing: 5px;  
+    text-align: center;
+    padding: 10px 50px 20px;
+
+}
+.product img{
+
+max-width: 100%;
+}
+.title{
+    font-weight: bold;
+    text-align: center;
+}

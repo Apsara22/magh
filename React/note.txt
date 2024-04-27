@@ -1,0 +1,5 @@
+function means componement
+props means variable in react js
+
+not create variable after return
+flex and grid 

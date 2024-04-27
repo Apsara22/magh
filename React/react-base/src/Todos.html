@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Todos</h1>
+    <form onsubmit="handleSubmit(event)">
+      <input id= "title" value="" type="text"/>
+      <input type="checkbox">
+      <button>create</button>
+    </form>
+    <ul id="todos-list">
+      <!-- <li>html</li>
+      <li>css</li>
+      <li>js</li> -->
+    </ul>
+    <script>
+
+      let todos=["html", "css","js"]
+      let outputString=""
+      todos.forEach((element)=>{
+        outputString=outputString +`<li>${element}</li>`;
+      document.getElementById("todos-list").innerHTML=outputString;
+
+      })
+
+      // let todos=["html","css","js"];
+      // let ul =document.createElement("li");
+      // for(i=0; i<todos.length ; i++){
+      //   let li =document.createElement("li");
+      //   li.textContent=todos[i];
+      //   ul.appendChild(li);
+        
+      // }
+      // document.getElementById("todos-list").appendChild(ul);
+        // function handleSubmit(event){
+        //     //alert("submiteted")
+        //     event.preventDefault()
+        //     let inputValue = document.getElementById("title").value;
+
+        //     console.log(`add ${inputValue}`);
+        //     document.getElementById("title").value="";
+
+        //     let newLi = document.createElement("li");// create object in js
+        //     newLi.innerText = inputValue;
+        //     document.getElementById("todos-list").appendChild(newLi);
+             
+        // }
+
+        let numbers = [1,2,3,4,5]
+        let sum=0;
+        numbers.forEach((element)=>{
+          sum =sum+element;
+        })
+        console.log(sum);
+    </script>
+  </body>
+</html>
+
+<!-- create todos todos-list
+search local storage -->

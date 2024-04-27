@@ -78,6 +78,7 @@ function checkStudentAviability(result)
 {
 if(students.hasPaid==true){
    console.log(`${students.name} give exam`);
+   
 }
 else if(students.hasScholorship==false){
    console.log(`${students.name} give exam`);
