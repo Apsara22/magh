@@ -1,42 +1,63 @@
-let todos =[
-    {
-        title: "html", 
-        status: "completed",
-        des: "Lorem ipsum dolor, sit amet consectetur adipisicing elit." 
-    },
-    {
-        title: "CSS", 
-        status: "completed",
-        des: "Lorem ipsum dolor, sit amet consectetur adipisicing elit." 
-    },
-    {
-        title: "JAVA SCRICT", 
-        status: "completed",
-        des: "Lorem ipsum dolor, sit amet consectetur adipisicing elit." 
+// let todos =[
+//     {
+//         title: "html", 
+//         status: "completed",
+//         des: "Lorem ipsum dolor, sit amet consectetur adipisicing elit." 
+//     },
+//     {
+//         title: "CSS", 
+//         status: "completed",
+//         des: "Lorem ipsum dolor, sit amet consectetur adipisicing elit." 
+//     },
+//     {
+//         title: "JAVA SCRICT", 
+//         status: "completed",
+//         des: "Lorem ipsum dolor, sit amet consectetur adipisicing elit." 
 
-    }
-];
+//     }
+// ];
 
+
+// export default function Todo(){
+//     return(
+//         <>
+//         <h2>TOdos</h2>
+//         <div id="todos" className="todos">
+//            { 
+//            todos.map((el, index)=> {
+//             return(
+//                 <SingleTodo
+//                 key={index}
+//                 title={el.title}
+//                 status={el.status}
+//                 description={el.des}
+//                 />
+
+//             );
+//            })}
+//         </div>
+//         </>
+
+//     )
+// }
+
+let todosData=["html","css","java"]
+
+// let mapTodos=todosData.map((element)=>{
+//     return<li>{element}</li>
+// })
 
 export default function Todo(){
     return(
         <>
-        <h2>TOdos</h2>
-        <div id="todos" className="todos">
-           { 
-           todos.map((el, index)=> {
-            return(
-                <SingleTodo
-                key={index}
-                title={el.title}
-                status={el.status}
-                description={el.des}
-                />
+        <h2>Todos List</h2>
+        <ul>
+            {/* {mapTodos} */}
+            {todosData.slice(0,2).map((el,index)=>{
+                return <li key={index}>{el}</li>
+            })}
+        </ul>
+</>
 
-            );
-           })}
-        </div>
-        </>
-
-    )
+    );
 }
