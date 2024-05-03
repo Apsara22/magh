@@ -67,8 +67,13 @@ export default function Todo(){
         // e.target.title.value=""
         
     }
-    function deleteTodo(index){
-        console.log("delete..",index)
+    function deleteTodo(deleteableIndex){
+        console.log("delete..",deleteableIndex);
+        let temp =[...todosData];
+        // temp.slice(index,1);
+        temp = temp.filter((el, idx) => deleteableIndex !== idx);
+    setTodosData(temp);
+
 
     }
 
@@ -84,7 +89,8 @@ export default function Todo(){
                 {todosData.map((el,index)=>{
                     return <li key={index} >
                         <input type="checkbox" /> <span>{el}</span>
-                        &nbsp;&nbsp;<button onClick={()=>{deleteTodo()}}>delete</button>
+                        &nbsp;&nbsp;
+                        <button type="button" onClick={()=>deleteTodo(index)}>delete</button>
                         </li>;
                 })}
             </ul>
