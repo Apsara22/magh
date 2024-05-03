@@ -41,23 +41,55 @@
 //     )
 // }
 
-let todosData=["html","css","java"]
+// let todosData=["html","css","java"]
 
 // let mapTodos=todosData.map((element)=>{
 //     return<li>{element}</li>
 // })
+import React,{useState} from "react";
 
 export default function Todo(){
-    return(
-        <>
-        <h2>Todos List</h2>
-        <ul>
-            {/* {mapTodos} */}
-            {todosData.slice(0,2).map((el,index)=>{
-                return <li key={index}>{el}</li>
-            })}
-        </ul>
-</>
 
-    );
+    // let todosData=["html","css",]
+    const[todosData,setTodosData]= useState([
+        "html","css",]);
+        
+
+    function addNewTodo(e){
+        e.preventDefault()
+        console.log(e.target.title.value);
+
+        let temp =[...todosData]// spread operator
+        temp.push(e.target.title.value);
+        setTodosData(temp)
+        console.log(temp)
+
+        // e.target.title.value=""
+        
+    }
+    function deleteTodo(index){
+        console.log("delete..",index)
+
+    }
+
+    return(
+        <div>
+            <h2>Todos list</h2>
+            <form action="" onSubmit={addNewTodo}>
+            <input required type="text" name="title" />
+            <button>Add</button>
+            </form>
+            {JSON.stringify(todosData)}
+            <ul>
+                {todosData.map((el,index)=>{
+                    return <li key={index} >
+                        <input type="checkbox" /> <span>{el}</span>
+                        &nbsp;&nbsp;<button onClick={()=>{deleteTodo()}}>delete</button>
+                        </li>;
+                })}
+            </ul>
+        </div>
+    )
 }
+
+//create delete list

@@ -5,11 +5,13 @@ export default function Counter() {
     console.log("re-render")
     const[count,setCount]= useState(101);
 
-    function increment(){
+    const  increment =() =>{
+      console.log("increment")
 
       setCount(count+1);
     }
-    function decrement(){
+    const decrement=()=>{
+      console.log("decrement")
 
       setCount(count-1);
     }

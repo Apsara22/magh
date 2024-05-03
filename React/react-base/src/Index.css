@@ -22,3 +22,6 @@ max-width: 100%;
     font-weight: bold;
     text-align: center;
 }
+ul{
+    list-style: none;
+}

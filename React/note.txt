@@ -3,3 +3,8 @@ props means variable in react js
 
 not create variable after return
 flex and grid 
+
+reference data types change any array but not change string and other
+array need to sperate oprator to copied other data
+
+inside css is written in camel from
