@@ -8,3 +8,23 @@ reference data types change any array but not change string and other
 array need to sperate oprator to copied other data
 
 inside css is written in camel from
+
+IN SQl base
+HTTP method
+read- GET
+create- POST
+upadte- PUT/PaATCH
+
+HTTP code status
+2 sucessful
+200, 201, 204
+
+3 redirect side error
+  303, 304
+
+4 client
+
+
+await needs to write in async
+
+react router dom

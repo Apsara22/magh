@@ -25,3 +25,15 @@ max-width: 100%;
 ul{
     list-style: none;
 }
+.theme{
+    background: #333;
+    color: whitesmoke;
+}
+
+.dark{
+    background: #333;
+    color: whitesmoke;
+}
+.light{
+    color: blue;
+}

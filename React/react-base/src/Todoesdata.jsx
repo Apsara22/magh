@@ -67,8 +67,10 @@ export default function TodoesData() {
     setTodosData(temp);
 
   }
-  function toggleStatus(){
-    let temp[..to]
+  function toggleStatus(index){
+    let temp=[...todosData];
+    temp[index].status=!temp[index].status;
+    setTodosData(temp);
   }
 
   return (
@@ -89,7 +91,7 @@ export default function TodoesData() {
               onChange={(e)=>{
                 toggleStatus(index)
               }} 
-              type="checkbox" /> <span className="">{el.title}</span>
+              type="checkbox" /> <span className={el.status? "line-through":""}>{el.title}</span>
               <button
                 type="button"
                 onClick={() => {

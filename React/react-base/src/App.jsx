@@ -1,27 +1,41 @@
 // import Product1 from "./Product1";
 // import Users from "./Users";
 // import Practice from "./Pratcice";
-// function App(){
-//     return (
-//         <div>
-//             <div>
-//               <Users/>
-//               <Practice/>
-//             </div>
-//         </div>
-//     );
-// }
+import "./Index.css";
+// import App from './App';
+// import data1 from './data/data1';
+// import Todo from './Todo';
+// import Counter from './Counter';
+// import TodoesData from './Todoesdata';
+// import Regi from './SelfPratice/Regi';
+// import ProductApi from './ProductApi';
+// import ProductSearch from './ProductSearch';
+import Changetheme from './Changetheme';
+// import GoogleTabs from './GoogleTabs';
 
-import products from "./data/products"
-export default function App(){
-    return(
+
+
+function App(){
+    return (
         <div>
-            <h1>{title}</h1>
-            <p>{description}</p>
-        </div>
-    )
+
+{/* <Users/>
+<Practice/> */}
+{/* <App/> */}
+    {/* <Todo/> */}
+    {/* <Counter/> */}
+    {/* <TodoesData/> */}
+    {/* <ProductApi/> */}
+    {/* <ProductSearch/> */}
+    <Changetheme/>
+    {/* <GoogleTabs/> */}
+
+
+    {/* <Regi/> */}
+</div>
+    
+    );
 }
-<product data={products[1]}/>,
-<product data={products[2]}/>,
-<product data={products[3]}/>,
-<product data={products[4]}/>
+export default App;
+
+
