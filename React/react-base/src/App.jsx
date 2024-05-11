@@ -1,8 +1,6 @@
 // import Product1 from "./Product1";
 // import Users from "./Users";
 // import Practice from "./Pratcice";
-import "./Index.css";
-// import App from './App';
 // import data1 from './data/data1';
 // import Todo from './Todo';
 // import Counter from './Counter';
@@ -10,12 +8,18 @@ import "./Index.css";
 // import Regi from './SelfPratice/Regi';
 // import ProductApi from './ProductApi';
 // import ProductSearch from './ProductSearch';
-import Changetheme from './Changetheme';
+// import Changetheme from './Changetheme';
 // import GoogleTabs from './GoogleTabs';
+import Calculator from "./SelfPratice/Calculator";
 
+
+//use css 
+// import "./Index.css"
+import "./SelfPratice/Calculator.css"
 
 
 function App(){
+
     return (
         <div>
 
@@ -27,8 +31,9 @@ function App(){
     {/* <TodoesData/> */}
     {/* <ProductApi/> */}
     {/* <ProductSearch/> */}
-    <Changetheme/>
-    {/* <GoogleTabs/> */}
+    {/* <Changetheme/>
+    <GoogleTabs/> */}
+    <Calculator/>
 
 
     {/* <Regi/> */}

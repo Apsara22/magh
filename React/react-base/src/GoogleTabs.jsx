@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 export default function GoogleTabs() {
+  let tabs = ["All", "Images", "Videos"];
   const [currentTab, setCurrentTab] = useState("all");
   return (
     <>
@@ -11,13 +12,17 @@ export default function GoogleTabs() {
           {/* <li onClick={()=>{setCurrentTab('all')}}>all</li>
           <li onClick={()=>{setCurrentTab('images')}}>images</li>
           <li onClick={()=>{setCurrentTab('videos')}}>videos</li> */}
-          <li className={`cursor-pointer ${currentTab== tab ? "active-tab":""}` 
-        onclick()}>
-            
-          </li>
+          { tabs.map((tab)=>{
+            return <li className={currentTab == tab? "activeTab" :""}
+            onClick={()=>{
+              setCurrentTab(tab)
+            }}>{tab}</li>
+          })}
+
+          
         </ul>
       </div>
-      -<div>
+      -<div className="tabs">
         <h2>All conents</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quam
