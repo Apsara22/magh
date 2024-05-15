@@ -37,3 +37,8 @@ ul{
 .light{
     color: blue;
 }
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
