@@ -11,7 +11,8 @@
 // import Changetheme from './Changetheme';
 // import GoogleTabs from './GoogleTabs';
 // import Header from './Header';
-import AddShopping from './SelfPratice/AddShopping';
+// import BMIAPP from "./SelfPratice/BMIAPP";
+import Input from "./SelfPratice/Input";
 // import Calculator from "./SelfPratice/Calculator";
 
 // import Webpage from "./SelfPratice/Webpage";
@@ -51,8 +52,8 @@ function App() {
 
   return (
 <div>
-//       <AddShopping/>
-
+{/* <BMIAPP/> */}
+<Input/>
 </div>
 //     <diV>
 // //     <div className={theme == "dark" ? "dark" : ""}>

@@ -6,3 +6,11 @@ post is productivity req and response
 
  mangodb community server
  mangodb compas
+
+ NOSQL means it stands for “not only SQL 
+ it means document database
+
+  vertical scailing changes data space like 4GB to 8GB
+  horizontal 
+ use todos create or switch database
+ it is called unstructure data
