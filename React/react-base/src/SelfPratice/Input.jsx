@@ -2,6 +2,12 @@ import React, { useEffect, useState } from "react";
     export default function Input(){
         
         const [title, setTitle] = useState(["html", "css","js"])
+        useEffect(() => {
+            const items = JSON.parse(localStorage.getItem('title'));
+            if (title) {
+              setTitle(title);
+            }
+          });
 
         function AddnewTitle(e){
         e.preventDefault()
@@ -19,6 +25,7 @@ import React, { useEffect, useState } from "react";
             temp = temp.filter((el, idx) => deletDatas !== idx);
         setTitle(temp);
          }
+
          
         return(
             <>

@@ -14,3 +14,13 @@ post is productivity req and response
   horizontal 
  use todos create or switch database
  it is called unstructure data
+
+ falsy in javascript null,0,false, NaN ,'' & undefined
+
+ Schema define the types of data like string, boolen
+
+
+ let todos = await Todo.find()
+  console.log(todos);
+  // res.send(["html","css"])
+  res.send(todos)
