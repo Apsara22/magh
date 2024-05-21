@@ -13,9 +13,9 @@
 // import Header from './Header';
 // import BMIAPP from "./SelfPratice/BMIAPP";
 // import Input from "./SelfPratice/Input";
-import Stopwatch from "./SelfPratice/Stopwatch";
+// import Stopwatch from "./SelfPratice/Stopwatch";
 // import Calculator from "./SelfPratice/Calculator";
-
+// import Weatherapp from "./SelfPratice/Weatherapp";
 // import Webpage from "./SelfPratice/Webpage";
 
 
@@ -55,7 +55,9 @@ function App() {
 <div>
 {/* <BMIAPP/> */}
 {/* <Input/> */}
-<Stopwatch/>
+{/* <Stopwatch/> */}
+{/* <Weatherapp/> */}
+
 </div>
 //     <diV>
 // //     <div className={theme == "dark" ? "dark" : ""}>

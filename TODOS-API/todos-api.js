@@ -38,7 +38,7 @@ app.post("/api/todos", async (req, res) => {
       title: req.body.title,
       status: req.body.status,
     })
-    res.send(newTodo)
+    
     res.send("data added")
   } catch (err) {
     console.log(err)
