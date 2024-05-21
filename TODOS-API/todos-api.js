@@ -25,9 +25,18 @@ app.get("/api/todos", async(req, res) =>{
 app.post("/api/todos", async (req, res) => {
   // db.todos.insertOne({title:})
   try {
+    if(!req.body.title){
+    res.status(400).send({
+      msg: "Bad request",
+      error:{
+        title: "required field"
+      }
+    })
+
+    }
     let newTodo = await Todo.create({
       title: req.body.title,
-      status: false,
+      status: req.body.status,
     })
     res.send(newTodo)
     res.send("data added")
@@ -38,9 +47,29 @@ app.post("/api/todos", async (req, res) => {
 })
 
 app.put("/api/todos/:id", async (req, res) => {
+  let error ={}
+  let hasError =false
+  if(!req.body.title)
+    {
+      error.title = "required"
+      hasError =true
+    }
+    if(!req.body.status)
+      {
+        error. status= "required"
+        hasError =true
+      }
+      if(hasError){
+        res.status(400).send(error)
+        return;
+      }
   
   try {
-    let todo = await Todo.findByIdAndUpdate(req.params.id, {
+    let todo = await Todo.findByIdAndUpdate(req.params.id)
+    if(!todo) {
+      res.status(404).send("rescources is not found")
+    }
+    await Todo.findByIdAndUpdate(req.params.id, {
       title: req.body.title,
       status: req.body.status,
     })
