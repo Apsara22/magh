@@ -15,7 +15,7 @@
 // import Input from "./SelfPratice/Input";
 // import Stopwatch from "./SelfPratice/Stopwatch";
 // import Calculator from "./SelfPratice/Calculator";
-// import Weatherapp from "./SelfPratice/Weatherapp";
+import Weatherapp from "./SelfPratice/Weatherapp";
 // import Webpage from "./SelfPratice/Webpage";
 
 
@@ -56,7 +56,7 @@ function App() {
 {/* <BMIAPP/> */}
 {/* <Input/> */}
 {/* <Stopwatch/> */}
-{/* <Weatherapp/> */}
+<Weatherapp/>
 
 </div>
 //     <diV>

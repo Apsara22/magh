@@ -42,3 +42,22 @@ ul{
     justify-content: space-between;
     align-items: center;
 }
+.line-through{
+    text-decoration: line-through;
+  }
+  .edit-modal{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .edit-modal .wrapper{
+    padding: 2rem;
+    background: white;
+  }
