@@ -1,6 +1,7 @@
 
 const express = require('express')
 const app = express()
+var cors = require('cors')
 const mongoose = require('mongoose'); 
 const Schema = mongoose.Schema
 
@@ -10,6 +11,7 @@ const TOdosSchema = new Schema({
 })
 
 const Todo = mongoose.model('Todo',TOdosSchema);
+app.use(cors())
 
 
 mongoose.connect('mongodb://127.0.0.1:27017/todos')
